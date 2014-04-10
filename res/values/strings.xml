@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Videotron Usage</string>
+    <string name="action_settings">Settings</string><string name="ok">OK</string>
+    <string name="first_run">This is the first time you use the app. Please get your Videotron user key and tap OK.</string>
+    <string name="user_key">Videotron User Key</string>
+    <string name="no_connection_str">No internet connection :(</string>
+    <string name="try_again">Try Again</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>
