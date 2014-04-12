@@ -22,11 +22,10 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int loader=0x7f020001;
     }
     public static final class id {
-        public static final int RelativeLayout01=0x7f080005;
         public static final int action_settings=0x7f080008;
+        public static final int check_usage=0x7f080005;
         public static final int first_run_ok=0x7f080001;
         public static final int first_run_user_key=0x7f080002;
         public static final int first_run_user_key_txt=0x7f080003;
@@ -47,6 +46,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int check_usage=0x7f050008;
         public static final int first_run=0x7f050003;
         public static final int no_connection_str=0x7f050005;
         public static final int ok=0x7f050002;

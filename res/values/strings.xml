@@ -7,4 +7,5 @@
     <string name="no_connection_str">No internet connection :(</string>
     <string name="try_again">Try Again</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="check_usage">Check Usage</string>
 </resources>
