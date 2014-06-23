@@ -25,15 +25,19 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class FetchJson extends AsyncTask<Void, String, Void> 
 {
 	Activity root;
+	float totalUsage;
 	
 	public FetchJson(Activity parent)
 	{
 		root = parent;
+		totalUsage = 0;
 	}
 	
 	@Override
@@ -118,6 +122,8 @@ public class FetchJson extends AsyncTask<Void, String, Void>
 	    	msg += String.format("Downloaded: %.2f GB", Float.parseFloat(m.get("downloaded"))) + "\n";
 	    	msg += String.format("Uploaded: %.2f GB", Float.parseFloat(m.get("uploaded"))) + "\n";
 	    	msg += "\n";
+	    	
+	    	totalUsage = Float.parseFloat(m.get("percent"));
 	    	msg += String.format("Combined: %.2f GB (%s%%)", Float.parseFloat(m.get("uploaded")) + Float.parseFloat(m.get("downloaded")), m.get("percent")) + "\n";
 	    }
 	    catch (Exception e)
@@ -128,4 +134,33 @@ public class FetchJson extends AsyncTask<Void, String, Void>
 	    publishProgress(msg);
 	    return null;
     }
+    
+    @Override
+    protected void onPostExecute(Void res)
+    {
+    	ProgressBar pb = (ProgressBar) root.findViewById(R.id.progress);
+    	
+    	pb.setVisibility(View.VISIBLE);
+    	pb.setProgress(Math.round(totalUsage));
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// lines added intentionally

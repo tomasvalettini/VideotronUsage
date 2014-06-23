@@ -20,7 +20,8 @@
         <activity
             android:name="com.flyingmongoose.videotronusage.FirstRun"
             android:label="@string/app_name"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:configChanges="orientation" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,12 +31,14 @@
         <activity
             android:name="com.flyingmongoose.videotronusage.MainActivity"
             android:label="@string/app_name"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:configChanges="orientation" >
         </activity>
         <activity
             android:name="com.flyingmongoose.videotronusage.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:configChanges="orientation" >
         </activity>
     </application>
 

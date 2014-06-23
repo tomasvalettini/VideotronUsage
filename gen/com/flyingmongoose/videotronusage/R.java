@@ -21,18 +21,20 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int custom_progressbar=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080008;
-        public static final int check_usage=0x7f080005;
+        public static final int action_settings=0x7f080009;
+        public static final int check_usage=0x7f080006;
         public static final int first_run_ok=0x7f080001;
         public static final int first_run_user_key=0x7f080002;
         public static final int first_run_user_key_txt=0x7f080003;
         public static final int ok_btn=0x7f080004;
-        public static final int output_message=0x7f080006;
+        public static final int output_message=0x7f080007;
+        public static final int progress=0x7f080005;
         public static final int textView1=0x7f080000;
-        public static final int try_again_btn=0x7f080007;
+        public static final int try_again_btn=0x7f080008;
     }
     public static final class layout {
         public static final int activity_first_run=0x7f030000;
